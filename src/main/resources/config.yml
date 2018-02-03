@@ -1,0 +1,46 @@
+# Plugin coded by Waldxn
+# Materials: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# Particles: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+
+
+# List of all airdrop broadcasts
+Prefix: "&9&lAirdrop &r≫"
+BroadcastDropping: "&7Airdrop is falling at x:%x%, z:%z%!"
+BroadcastLanding: "&7The supply drop has landed at x:%x%, z:%z%!"
+BroadcastClaim: "&a%username% &7has claimed the supply drop at x:%x%, z:%z%!"
+
+
+# Automatically spawn airdrops
+AutomaticAirdrops: true
+# IMPORTANT! List all of your worlds below. Make sure to disable any worlds by inputting false
+AutomaticAirdropWorlds:
+  world: true
+  world_nether: false
+  world_the_end: false
+# How many ticks in-between airdrops
+AutomaticAirdropDelay: 36000
+
+
+# Title of the airdrop's inventory
+AirdropInventoryTitle: "&7Airdrop"
+# How fast the airdrop falls 1 block downwards (20 ticks = 1 second)
+AirdropFallingSpeed: 3
+
+
+Crates:
+# Copy this format for your custom crates
+  DefaultCrate:
+# Crate included in automatic airdrops
+    AutomaticCrate: true
+# Particle modifiers (See particles link above for correct syntax such as FIREWORKS_SPARK)
+    Particle: FIREWORKS_SPARK
+    ParticleAmount: 1
+# Range of coordinates for this crate to drop
+    xMin: -100
+    xMax: 100
+    zMin: -100
+    zMax: 100
+# List of items included in the airdrop (Up to 27 items)
+    Items:
+      DIAMOND:
+        Quantity: 2

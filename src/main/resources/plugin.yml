@@ -1,0 +1,20 @@
+name: McAirdrop
+version: ${project.version}
+main: me.waldxn.mcairdrop.McAirdrop
+commands:
+  airdrop:
+    description: Call in an airdrop
+    usage: /airdrop [crate] <X-Coord> <Z-Coord>
+  airdroplist:
+    description: List all airdrop crates
+    usage: /airdroplist
+  airdroplocations:
+    description: List all airdrop locations
+    usage: /airdroplocations
+permissions:
+  airdrop.call:
+    description: Access to /airdrop
+  airdrop.list:
+    description: Access to /airdroplist
+  airdrop.locations:
+    description: Access to/ airdroplocations
